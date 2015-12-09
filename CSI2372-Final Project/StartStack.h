@@ -1,7 +1,8 @@
 #pragma once
 #ifndef STARTSTACK_H
 #define STARTSTACK_H
-#include "AnimalCard.h"
+#include "ActionCard.h"
+#include "Split.h"
 #include <iostream>
 #include <memory>
 

@@ -14,11 +14,7 @@ public:
 	//~ActionCard();
 	virtual	QueryResult query();
 	virtual void perform(Table&, Player*, QueryResult);
-	class BearAction;
-	class DeerAction;
-	class HareAction;
-	class MooseAction;
-	class WolfAction;
+	
 };
 
 #endif

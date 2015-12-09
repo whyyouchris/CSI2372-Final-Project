@@ -1,28 +1,22 @@
 #include "Deck.h"
-#include "AnimalCard.h"
 #include <iostream>
 #include <vector>
 #include <memory>
 
-template <class T>
-Deck<T>::Deck()
-{
-	AnimalCard temp[52];
-	std::vector<T> deck = temp;
+template <class T> class Deck : public std::vector<T> {
+public:
+	Deck(std::vector<T> list) : std::vector<T>(list) {};
+	T draw();
+};
 
-}
 
-template <class T>
-Deck<T>::~Deck()
-{
-	delete[] deck;
-}
+template <class T> T Deck<T>::draw() {
+	if (std::vector<T>::empty()) {
+		return NULL;
+	}
+	T card = std::vector<T>::back();
+	std::vector<T>::pop_back();
+	return card;
+};
 
-template <class T>
-std::shared_ptr<T> Deck<T>::draw() {
-	AnimalCard temp;
-	temp = deck.front;
-	assert(!deck.empty());
-	deck.erase(deck.begin());
-	return temp;
-}
+

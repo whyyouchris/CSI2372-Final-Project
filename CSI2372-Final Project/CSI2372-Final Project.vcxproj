@@ -153,6 +153,8 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="QueryResult.h" />
     <ClInclude Include="StartStack.h" />
+    <ClInclude Include="Table.h" />
+    <ClInclude Include="WolfAction.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ActionCard.cpp" />
@@ -163,6 +165,8 @@
     <ClCompile Include="QueryResult.cpp" />
     <ClCompile Include="Split.cpp" />
     <ClCompile Include="StartStack.cpp" />
+    <ClCompile Include="Table.cpp" />
+    <ClCompile Include="WolfAction.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
